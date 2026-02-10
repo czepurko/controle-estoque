@@ -1,11 +1,11 @@
 import { useEffect, useState, useCallback } from "react";
 
 function App() {
-  const API_BASE = "http://localhost:8080";
+  const API_BASE = "https://controle-estoque-7y3q.onrender.com";
   const PRODUCT_API = `${API_BASE}/products`;
   const MATERIAL_API = `${API_BASE}/raw-materials`;
   const PM_API = `${API_BASE}/product-materials`;
-  const PRODUCTION_API = `${API_BASE}/production`;
+  const PRODUCTION_API = `${API_BASE}/inventory`;
 
   const [production, setProduction] = useState([]);
   const [products, setProducts] = useState([]);
