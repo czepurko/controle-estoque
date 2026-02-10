@@ -357,9 +357,8 @@ function App() {
           {production.length > 0 ? (
             production.map((p, i) => (
               <li key={i} style={{ fontSize: "1.1em", padding: "5px 0" }}>
-                <strong>{p.productName}</strong> → Máximo:{" "}
-                <strong>{p.quantityPossible}</strong> unidades | Valor total:{" "}
-                <strong>${p.totalValue}</strong>
+                <strong>{p.product}</strong> → Máximo:{" "}
+                <strong>{p.canProduce}</strong> unidades
               </li>
             ))
           ) : (
